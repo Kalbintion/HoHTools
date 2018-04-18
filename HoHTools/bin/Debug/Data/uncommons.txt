@@ -1,0 +1,30 @@
+﻿Adventurer's Garb|+25 Health and +30 Mana
+Apothecary's Mortar and Pestle|Potions increase armor and magical resistance by 50% for 5 seconds
+Apothecary's Satchel|Potions are 50% more effective
+Apothecary's Sphere|Triggers a combo when using a potion
+Assassin's Dagger|+7.5% chance to score a critical hit on primary attack
+Blood Dagger|5% chance to gain 5 health when hitting an enemy with your primary attack
+Claymore|+10 attack power and +5 physical damage on primary attack
+Cloak of Many Pockets|Gain 25% more gold
+Elven Bow|+20 attack power
+Fancy Plume|Vendors will have more items in campaign shops
+Full Plate Mail|+15 armor
+Greater Ring of Rejuvenation|+.5 health and +1 mana regeneration
+Monster Manual: Aberration|20% increased experience gain and damage to aberrations
+Monster Manual: Beast|20% increased experience gain and damage to beasts
+Monster Manual: Construct|20% increased experience gain and damage to constructs
+Monster Manual: Undead|20% increased experience gain and damage to undead
+Old Map|Removes the Fog of War from the map
+Rapier of Retaliation|5% increased evasion. When evading an attack, a 3-second 25% damage buff is applied
+Ring of Transmutation|25% of health loss is turned into mana
+Robe of the Arch-Magi|+10 skill power and +10 resistance
+Scarab of Protection|Returns 25 magical damage to the attacker when hit and releases a nova of poison darts
+Seal of the Martyr|Deal 1% more damage for each % health missing
+Shaftlocke Pickaxe|50% chance of receiving an extra ore when picking up ore
+Sphere of Life|During combo, health regeneration is increased by +1.5
+Sphere of Mana|During combo, mana regeneration is increased by +3
+Staff of Unstable Casting|5% increased chance to score a critical hit with spells
+Stinger|Physical damage ignores 20% of the enemy's armor
+Talisman of Decay|Nearby enemies take 20% more damage
+Tower Shield|25% chance to block 15 physical damage
+Wand of Spell Piercing|Magical damage ignores 15% of the enemy's resistance

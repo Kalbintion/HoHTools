@@ -1,0 +1,4 @@
+﻿Descending Destruction|+10% to drop a meteor when scoring a hit with your primary attack (0.5s cooldown)
+Spirit Cloak|When taking damage you turn invulnerable for 3 seconds, with a cooldown of 10 seconds.
+Medusa's charm|Enemies you look at are slowed by 66%. Enemies effected by the gaze that hits you are stunned for 6 seconds.
+Soul taker|When you kill an enemy, a random enemy of the same type is also killed.
