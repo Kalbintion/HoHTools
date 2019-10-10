@@ -11,4 +11,17 @@
     Private Sub btnToolStat_Click(sender As System.Object, e As System.EventArgs) Handles btnToolStat.Click
         frmStatCalc.Show()
     End Sub
+
+    Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles btnOverlay.Click
+        frmLibraryOverlay.Show()
+        frmLightsSolverOverlay.Show()
+    End Sub
+
+    Private Sub btnSettings_Click(sender As System.Object, e As System.EventArgs) Handles btnSettings.Click
+        frmSettingsEditor.Show()
+    End Sub
+
+    Private Sub btnConstellation_Click(sender As System.Object, e As System.EventArgs) Handles btnConstellation.Click
+        frmConstellation.Show()
+    End Sub
 End Class

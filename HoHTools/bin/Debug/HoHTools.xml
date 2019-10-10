@@ -31,6 +31,10 @@ HoHTools
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Constellation_Base">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:HoHTools.My.Resources.Resources.Experience">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -52,6 +56,14 @@ HoHTools
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:HoHTools.My.Resources.Resources.Icon_Blood">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Icon_Constellation_Off">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Icon_Constellation_On">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

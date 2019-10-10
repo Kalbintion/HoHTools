@@ -121,20 +121,23 @@
   <data name="Tile_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Tile_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Skill_Effects" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Skill Effects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Armor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Armor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Town Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Stats\Town Gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Icon_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Mana Regen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Stats\Mana Regen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Attack_Effects" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Attack Effects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skill_Power" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Skill Power.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_Decay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Icon_Decay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Skill Power" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Stats\Skill Power.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +145,8 @@
   <data name="Tile_Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Tile_Off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Attack Effects" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Stats\Attack Effects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Skill Effects" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Stats\Skill Effects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Town_Ore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Town Ore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_Library_Tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Icon_Library_Tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,23 +160,23 @@
   <data name="Icon_Lights_Tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Icon_Lights_Tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Town Ore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Stats\Town Ore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_Dark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Icon_Dark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Itemsprite2xcrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Itemsprite2xcrop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Health" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Health.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Town_Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Town Gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Mana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Mana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Attack Power" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Stats\Attack Power.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Health_Regen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Health Regen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Stats_tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Icon_Stats_tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Resistance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Resistance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,14 +184,17 @@
   <data name="Ore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Ore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Move Speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Move_Speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Move Speed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Attack_Power" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Attack Power.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mana_Regen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Mana Regen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_Malign" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Icon_Malign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Health Regen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Stats\Health Regen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Experience" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Experience.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +202,15 @@
   <data name="Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_Stats_tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Icon_Stats_tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Constellation_Base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Constellation_Base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Constellation_Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Icon_Constellation_Off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>0</comment>
+  </data>
+  <data name="Icon_Constellation_On" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Icon_Constellation_On.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>1</comment>
   </data>
 </root>

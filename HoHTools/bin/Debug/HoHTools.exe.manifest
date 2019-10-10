@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HoHTools.exe" size="725504">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HoHTools.exe" size="1241088">
       <assemblyIdentity name="HoHTools" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>SCh+I74ttqYi82weDLDeW5aE9Js=</dsig:DigestValue>
+        <dsig:DigestValue>Viv8Eo5udkCMeQdXRnbzpOBBaX0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -88,6 +88,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>tG7xe0BOfRdMgvBtBGcmfNc/GKs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="HoHTools.exe.config" size="429">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9jMBUaIfjgkyZl9RNGcA4pwZ/FM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Res\Icon.ico" size="136486">

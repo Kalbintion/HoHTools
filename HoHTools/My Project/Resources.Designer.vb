@@ -75,7 +75,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Attack_Effects() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Attack Effects", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Attack_Effects", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -85,7 +85,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Attack_Power() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Attack Power", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Attack_Power", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -96,6 +96,16 @@ Namespace My.Resources
         Friend ReadOnly Property Background() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Background", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Constellation_Base() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Constellation_Base", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -135,7 +145,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Health_Regen() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Health Regen", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Health_Regen", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -156,6 +166,26 @@ Namespace My.Resources
         Friend ReadOnly Property Icon_Blood() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Icon_Blood", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Icon_Constellation_Off() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Icon_Constellation_Off", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Icon_Constellation_On() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Icon_Constellation_On", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -245,7 +275,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Mana_Regen() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Mana Regen", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Mana_Regen", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -255,7 +285,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Move_Speed() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Move Speed", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Move_Speed", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -285,7 +315,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Skill_Effects() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Skill Effects", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Skill_Effects", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -295,7 +325,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Skill_Power() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Skill Power", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Skill_Power", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -325,7 +355,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Town_Gold() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Town Gold", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Town_Gold", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -335,7 +365,7 @@ Namespace My.Resources
         '''</summary>
         Friend ReadOnly Property Town_Ore() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Town Ore", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("Town_Ore", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
