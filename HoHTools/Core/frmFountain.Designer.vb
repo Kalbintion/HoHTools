@@ -22,6 +22,7 @@ Partial Class frmFountain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmFountain))
         Me.pnlMain = New System.Windows.Forms.Panel()
         Me.pnlFavor = New System.Windows.Forms.Panel()
@@ -101,6 +102,7 @@ Partial Class frmFountain
         Me.btnSave = New System.Windows.Forms.Button()
         Me.ofd = New System.Windows.Forms.OpenFileDialog()
         Me.sfd = New System.Windows.Forms.SaveFileDialog()
+        Me.tt = New System.Windows.Forms.ToolTip(Me.components)
         Me.pnlMain.SuspendLayout()
         Me.pnlFavor.SuspendLayout()
         Me.pnlFavCost.SuspendLayout()
@@ -333,6 +335,7 @@ Partial Class frmFountain
         Me.lblDebuff16.TabIndex = 16
         Me.lblDebuff16.Text = "   -14 Public Holiday"
         Me.lblDebuff16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff16, "No dungeon shopkeepers")
         '
         'lblDebuff15
         '
@@ -346,6 +349,7 @@ Partial Class frmFountain
         Me.lblDebuff15.TabIndex = 15
         Me.lblDebuff15.Text = "   -10 Instant Death"
         Me.lblDebuff15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff15, "Your base health is set to 1, health can still be increased with items")
         '
         'lblDebuff14
         '
@@ -359,6 +363,7 @@ Partial Class frmFountain
         Me.lblDebuff14.TabIndex = 14
         Me.lblDebuff14.Text = "   -10 Empty Pockets"
         Me.lblDebuff14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff14, "Enemies will not drop any loot, including bosses")
         '
         'lblDebuff13
         '
@@ -372,6 +377,7 @@ Partial Class frmFountain
         Me.lblDebuff13.TabIndex = 13
         Me.lblDebuff13.Text = "   -8 Sealed Cracks"
         Me.lblDebuff13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff13, "No secrets will spawn")
         '
         'lblDebuff12
         '
@@ -385,6 +391,7 @@ Partial Class frmFountain
         Me.lblDebuff12.TabIndex = 12
         Me.lblDebuff12.Text = "   -7 Dry Springs"
         Me.lblDebuff12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff12, "Springs are unusable")
         '
         'lblDebuff11
         '
@@ -398,6 +405,7 @@ Partial Class frmFountain
         Me.lblDebuff11.TabIndex = 11
         Me.lblDebuff11.Text = "   -6 Agile Adversaries"
         Me.lblDebuff11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff11, "Enemies movement speed increased by 50%")
         '
         'lblDebuff10
         '
@@ -411,6 +419,7 @@ Partial Class frmFountain
         Me.lblDebuff10.TabIndex = 10
         Me.lblDebuff10.Text = "   -6 Miners' Strike"
         Me.lblDebuff10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff10, "Elevators are unusable")
         '
         'lblDebuff9
         '
@@ -424,6 +433,7 @@ Partial Class frmFountain
         Me.lblDebuff9.TabIndex = 9
         Me.lblDebuff9.Text = "   -5 One Man Guild"
         Me.lblDebuff9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff9, "You gain no bonuses from class titles")
         '
         'lblDebuff8
         '
@@ -437,6 +447,7 @@ Partial Class frmFountain
         Me.lblDebuff8.TabIndex = 8
         Me.lblDebuff8.Text = "   -5 Enemy Overseers"
         Me.lblDebuff8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff8, "Mini bosses spawn on every floor, excluding Act 4")
         '
         'lblDebuff7
         '
@@ -450,6 +461,7 @@ Partial Class frmFountain
         Me.lblDebuff7.TabIndex = 7
         Me.lblDebuff7.Text = "   -5 Relentless Threats"
         Me.lblDebuff7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff7, "Great threats are more frequent")
         '
         'lblDebuff6
         '
@@ -463,6 +475,7 @@ Partial Class frmFountain
         Me.lblDebuff6.TabIndex = 6
         Me.lblDebuff6.Text = "   -4 Exhausted Ore Veins"
         Me.lblDebuff6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff6, "No Ore spawns")
         '
         'lblDebuff5
         '
@@ -476,6 +489,7 @@ Partial Class frmFountain
         Me.lblDebuff5.TabIndex = 5
         Me.lblDebuff5.Text = "   -4 Elite Reinforcements"
         Me.lblDebuff5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff5, "More elite enemies")
         '
         'lblDebuff4
         '
@@ -489,6 +503,7 @@ Partial Class frmFountain
         Me.lblDebuff4.TabIndex = 4
         Me.lblDebuff4.Text = "   -2 Lethal Traps"
         Me.lblDebuff4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff4, "Traps deal 200% damage")
         '
         'lblDebuff3
         '
@@ -502,6 +517,7 @@ Partial Class frmFountain
         Me.lblDebuff3.TabIndex = 3
         Me.lblDebuff3.Text = "   -2 Spicy Potions"
         Me.lblDebuff3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff3, "Become confused for 2.5 seconds when drinking a potion charge")
         '
         'lblDebuff2
         '
@@ -515,6 +531,7 @@ Partial Class frmFountain
         Me.lblDebuff2.TabIndex = 2
         Me.lblDebuff2.Text = "   -2 Enemy Reinforcements"
         Me.lblDebuff2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff2, "More Enemies")
         '
         'lblDebuff1
         '
@@ -528,6 +545,7 @@ Partial Class frmFountain
         Me.lblDebuff1.TabIndex = 1
         Me.lblDebuff1.Text = "   -1 Lousy Consumables"
         Me.lblDebuff1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblDebuff1, "All health and mana pickups are 50% less effective")
         '
         'pnlPositive
         '
@@ -580,6 +598,7 @@ Partial Class frmFountain
         Me.lblBuff18.TabIndex = 17
         Me.lblBuff18.Text = "   +14 Offshore Account"
         Me.lblBuff18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff18, "Tax reduction.")
         '
         'lblBuff17
         '
@@ -593,6 +612,7 @@ Partial Class frmFountain
         Me.lblBuff17.TabIndex = 16
         Me.lblBuff17.Text = "   +8 Sluggish Adversaries"
         Me.lblBuff17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff17, "Enemy movement decreased by 33%")
         '
         'lblBuff16
         '
@@ -606,6 +626,7 @@ Partial Class frmFountain
         Me.lblBuff16.TabIndex = 15
         Me.lblBuff16.Text = "   +8 Ace Chests"
         Me.lblBuff16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff16, "Higher chance of Ace chests spawning")
         '
         'lblBuff15
         '
@@ -619,6 +640,7 @@ Partial Class frmFountain
         Me.lblBuff15.TabIndex = 14
         Me.lblBuff15.Text = "   +6 Demolished Spawners"
         Me.lblBuff15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff15, "All spawners are destroyed")
         '
         'lblBuff14
         '
@@ -632,6 +654,7 @@ Partial Class frmFountain
         Me.lblBuff14.TabIndex = 13
         Me.lblBuff14.Text = "   +6 Treasure Hunt"
         Me.lblBuff14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff14, "Chance for additional chest rooms")
         '
         'lblBuff13
         '
@@ -645,6 +668,7 @@ Partial Class frmFountain
         Me.lblBuff13.TabIndex = 12
         Me.lblBuff13.Text = "   +6 Glass Walks"
         Me.lblBuff13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff13, "Enables Glass Walks")
         '
         'lblBuff12
         '
@@ -658,6 +682,7 @@ Partial Class frmFountain
         Me.lblBuff12.TabIndex = 11
         Me.lblBuff12.Text = "   +5 Mysterious Guidance"
         Me.lblBuff12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff12, "Increased chance of finding Monoliths")
         '
         'lblBuff11
         '
@@ -671,6 +696,7 @@ Partial Class frmFountain
         Me.lblBuff11.TabIndex = 10
         Me.lblBuff11.Text = "   +5 Infrequent Threats"
         Me.lblBuff11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff11, "Great threats are less frequent")
         '
         'lblBuff10
         '
@@ -684,6 +710,7 @@ Partial Class frmFountain
         Me.lblBuff10.TabIndex = 9
         Me.lblBuff10.Text = "   +5 Ace Key"
         Me.lblBuff10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff10, "Receive 1 Ace Key")
         '
         'lblBuff9
         '
@@ -697,6 +724,7 @@ Partial Class frmFountain
         Me.lblBuff9.TabIndex = 8
         Me.lblBuff9.Text = "   +5 Abundant Shops"
         Me.lblBuff9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff9, "Shops have 2 more items in stock")
         '
         'lblBuff8
         '
@@ -710,6 +738,7 @@ Partial Class frmFountain
         Me.lblBuff8.TabIndex = 7
         Me.lblBuff8.Text = "   +5 Unlimited Springs"
         Me.lblBuff8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff8, "Springs have unlimited uses")
         '
         'lblBuff7
         '
@@ -723,6 +752,7 @@ Partial Class frmFountain
         Me.lblBuff7.TabIndex = 6
         Me.lblBuff7.Text = "   +4 Bigger Bottle"
         Me.lblBuff7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff7, "2 more potion charges")
         '
         'lblBuff6
         '
@@ -736,6 +766,7 @@ Partial Class frmFountain
         Me.lblBuff6.TabIndex = 5
         Me.lblBuff6.Text = "   +4 Plentiful Gifts"
         Me.lblBuff6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff6, "INcreased chance of finding Imps")
         '
         'lblBuff5
         '
@@ -749,6 +780,7 @@ Partial Class frmFountain
         Me.lblBuff5.TabIndex = 4
         Me.lblBuff5.Text = "   +3 Exceptional Consumables"
         Me.lblBuff5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff5, "All health and mana pickups are 500% more effective")
         '
         'lblBuff4
         '
@@ -762,6 +794,7 @@ Partial Class frmFountain
         Me.lblBuff4.TabIndex = 3
         Me.lblBuff4.Text = "   +2 Safe Corridors"
         Me.lblBuff4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff4, "All traps in corridors are disabled.")
         '
         'lblBuff3
         '
@@ -775,6 +808,7 @@ Partial Class frmFountain
         Me.lblBuff3.TabIndex = 2
         Me.lblBuff3.Text = "   +2 Toppled Towers"
         Me.lblBuff3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff3, "All towers are destroyed")
         '
         'lblBuff2
         '
@@ -788,6 +822,7 @@ Partial Class frmFountain
         Me.lblBuff2.TabIndex = 1
         Me.lblBuff2.Text = "   +2 Gentle Traps"
         Me.lblBuff2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff2, "Traps do 50% less damage")
         '
         'lblBuff1
         '
@@ -801,6 +836,7 @@ Partial Class frmFountain
         Me.lblBuff1.TabIndex = 0
         Me.lblBuff1.Text = "   +1 Expanded Floors"
         Me.lblBuff1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.tt.SetToolTip(Me.lblBuff1, "15% Bigger Floors")
         '
         'pnlLabelBar
         '
@@ -1086,6 +1122,11 @@ Partial Class frmFountain
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = False
         '
+        'tt
+        '
+        Me.tt.BackColor = System.Drawing.Color.FromArgb(CType(CType(172, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.tt.ForeColor = System.Drawing.Color.White
+        '
         'frmFountain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1197,4 +1238,5 @@ Partial Class frmFountain
     Friend WithEvents btnReset As System.Windows.Forms.Button
     Friend WithEvents ofd As System.Windows.Forms.OpenFileDialog
     Friend WithEvents sfd As System.Windows.Forms.SaveFileDialog
+    Friend WithEvents tt As System.Windows.Forms.ToolTip
 End Class
