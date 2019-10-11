@@ -112,6 +112,15 @@
     Private Sub LabelHover(sender As Object, e As System.EventArgs)
         Dim lb As Label = CType(sender, Label)
         lb.Image = My.Resources.Fountain_Btn_Hover
+
+        ' Panel Fix, See Region "Panel Scroll Fix"
+        If lb.Name.Contains("Debuff") Then
+            activePanel = pnlNegative
+        ElseIf lb.Name.Contains("Buff") Then
+            activePanel = pnlPositive
+        Else
+            activePanel = Nothing
+        End If
     End Sub
 
     Private Sub LabelClick(sender As Object, e As System.EventArgs)
@@ -134,6 +143,10 @@
         ElseIf lb.Tag = "1" Then
             lb.Image = My.Resources.Fountain_Btn_Selected
         End If
+
+        ' Panel Fix, See Region "Panel Scroll Fix"
+        If activePanel IsNot Nothing And lastActive IsNot Nothing Then lastActive.Focus()
+        activePanel = Nothing
     End Sub
 
     Private Sub UpdateFortune()
@@ -318,5 +331,19 @@
 
         Return True
     End Function
+
+#Region "PanelScrollFix"
+
+    Private activePanel As Panel = Nothing
+    Private lastActive As Object = Nothing
+
+    Private Sub frmFountain_MouseWheel(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseWheel
+        If lastActive Is Nothing Then lastActive = Me.ActiveControl
+
+        If activePanel IsNot Nothing Then
+            activePanel.Focus()
+        End If
+    End Sub
+#End Region
 
 End Class

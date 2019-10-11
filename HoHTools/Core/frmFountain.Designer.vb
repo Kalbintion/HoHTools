@@ -1136,6 +1136,7 @@ Partial Class frmFountain
         Me.Controls.Add(Me.pnlMain)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
         Me.MaximizeBox = False
         Me.MaximumSize = New System.Drawing.Size(708, 467)
         Me.MinimumSize = New System.Drawing.Size(708, 467)
