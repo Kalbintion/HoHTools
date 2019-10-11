@@ -25,6 +25,7 @@ Partial Class frmFountain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmFountain))
         Me.pnlMain = New System.Windows.Forms.Panel()
         Me.pnlFavor = New System.Windows.Forms.Panel()
+        Me.lblFavCostLb = New System.Windows.Forms.Label()
         Me.pnlFavCost = New System.Windows.Forms.Panel()
         Me.lblFavCost = New System.Windows.Forms.Label()
         Me.picFavCost = New System.Windows.Forms.PictureBox()
@@ -37,6 +38,7 @@ Partial Class frmFountain
         Me.picFavorBalance = New System.Windows.Forms.PictureBox()
         Me.lblFavor = New System.Windows.Forms.Label()
         Me.pnlNegative = New System.Windows.Forms.Panel()
+        Me.lblBufferNeg = New System.Windows.Forms.Label()
         Me.lblDebuff16 = New System.Windows.Forms.Label()
         Me.lblDebuff15 = New System.Windows.Forms.Label()
         Me.lblDebuff14 = New System.Windows.Forms.Label()
@@ -54,6 +56,7 @@ Partial Class frmFountain
         Me.lblDebuff2 = New System.Windows.Forms.Label()
         Me.lblDebuff1 = New System.Windows.Forms.Label()
         Me.pnlPositive = New System.Windows.Forms.Panel()
+        Me.lblBufferPos = New System.Windows.Forms.Label()
         Me.lblBuff18 = New System.Windows.Forms.Label()
         Me.lblBuff17 = New System.Windows.Forms.Label()
         Me.lblBuff16 = New System.Windows.Forms.Label()
@@ -90,15 +93,14 @@ Partial Class frmFountain
         Me.pnlTBRC = New System.Windows.Forms.Panel()
         Me.pnlTPLC = New System.Windows.Forms.Panel()
         Me.pnlBtnBar = New System.Windows.Forms.Panel()
+        Me.btnReset = New System.Windows.Forms.Button()
         Me.chkHideUnsel = New System.Windows.Forms.CheckBox()
         Me.btnLoadShare = New System.Windows.Forms.Button()
         Me.btnShare = New System.Windows.Forms.Button()
         Me.btnLoad = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
-        Me.lblBufferPos = New System.Windows.Forms.Label()
-        Me.lblBufferNeg = New System.Windows.Forms.Label()
-        Me.lblFavCostLb = New System.Windows.Forms.Label()
-        Me.btnReset = New System.Windows.Forms.Button()
+        Me.ofd = New System.Windows.Forms.OpenFileDialog()
+        Me.sfd = New System.Windows.Forms.SaveFileDialog()
         Me.pnlMain.SuspendLayout()
         Me.pnlFavor.SuspendLayout()
         Me.pnlFavCost.SuspendLayout()
@@ -147,6 +149,18 @@ Partial Class frmFountain
         Me.pnlFavor.Name = "pnlFavor"
         Me.pnlFavor.Size = New System.Drawing.Size(137, 351)
         Me.pnlFavor.TabIndex = 8
+        '
+        'lblFavCostLb
+        '
+        Me.lblFavCostLb.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.lblFavCostLb.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFavCostLb.ForeColor = System.Drawing.Color.White
+        Me.lblFavCostLb.Location = New System.Drawing.Point(0, 282)
+        Me.lblFavCostLb.Name = "lblFavCostLb"
+        Me.lblFavCostLb.Size = New System.Drawing.Size(137, 27)
+        Me.lblFavCostLb.TabIndex = 5
+        Me.lblFavCostLb.Text = "Cost"
+        Me.lblFavCostLb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'pnlFavCost
         '
@@ -295,6 +309,17 @@ Partial Class frmFountain
         Me.pnlNegative.Name = "pnlNegative"
         Me.pnlNegative.Size = New System.Drawing.Size(265, 351)
         Me.pnlNegative.TabIndex = 7
+        '
+        'lblBufferNeg
+        '
+        Me.lblBufferNeg.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lblBufferNeg.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBufferNeg.ForeColor = System.Drawing.Color.White
+        Me.lblBufferNeg.Location = New System.Drawing.Point(0, 672)
+        Me.lblBufferNeg.Name = "lblBufferNeg"
+        Me.lblBufferNeg.Size = New System.Drawing.Size(252, 1)
+        Me.lblBufferNeg.TabIndex = 17
+        Me.lblBufferNeg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblDebuff16
         '
@@ -531,6 +556,17 @@ Partial Class frmFountain
         Me.pnlPositive.Name = "pnlPositive"
         Me.pnlPositive.Size = New System.Drawing.Size(265, 351)
         Me.pnlPositive.TabIndex = 6
+        '
+        'lblBufferPos
+        '
+        Me.lblBufferPos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.lblBufferPos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBufferPos.ForeColor = System.Drawing.Color.White
+        Me.lblBufferPos.Location = New System.Drawing.Point(0, 756)
+        Me.lblBufferPos.Name = "lblBufferPos"
+        Me.lblBufferPos.Size = New System.Drawing.Size(252, 1)
+        Me.lblBufferPos.TabIndex = 18
+        Me.lblBufferPos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lblBuff18
         '
@@ -954,15 +990,28 @@ Partial Class frmFountain
         Me.pnlBtnBar.Size = New System.Drawing.Size(702, 24)
         Me.pnlBtnBar.TabIndex = 0
         '
+        'btnReset
+        '
+        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(172, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnReset.Dock = System.Windows.Forms.DockStyle.Left
+        Me.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnReset.ForeColor = System.Drawing.Color.White
+        Me.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnReset.Location = New System.Drawing.Point(400, 0)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(100, 24)
+        Me.btnReset.TabIndex = 11
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.UseVisualStyleBackColor = False
+        '
         'chkHideUnsel
         '
         Me.chkHideUnsel.Appearance = System.Windows.Forms.Appearance.Button
         Me.chkHideUnsel.BackColor = System.Drawing.Color.FromArgb(CType(CType(172, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.chkHideUnsel.Dock = System.Windows.Forms.DockStyle.Right
         Me.chkHideUnsel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.chkHideUnsel.FlatAppearance.CheckedBackColor = System.Drawing.Color.White
-        Me.chkHideUnsel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.chkHideUnsel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White
         Me.chkHideUnsel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.chkHideUnsel.ForeColor = System.Drawing.Color.White
         Me.chkHideUnsel.Location = New System.Drawing.Point(604, 0)
@@ -1037,56 +1086,6 @@ Partial Class frmFountain
         Me.btnSave.Text = "Save"
         Me.btnSave.UseVisualStyleBackColor = False
         '
-        'lblBufferPos
-        '
-        Me.lblBufferPos.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lblBufferPos.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBufferPos.ForeColor = System.Drawing.Color.White
-        Me.lblBufferPos.Location = New System.Drawing.Point(0, 756)
-        Me.lblBufferPos.Name = "lblBufferPos"
-        Me.lblBufferPos.Size = New System.Drawing.Size(252, 1)
-        Me.lblBufferPos.TabIndex = 18
-        Me.lblBufferPos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblBufferNeg
-        '
-        Me.lblBufferNeg.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lblBufferNeg.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBufferNeg.ForeColor = System.Drawing.Color.White
-        Me.lblBufferNeg.Location = New System.Drawing.Point(0, 672)
-        Me.lblBufferNeg.Name = "lblBufferNeg"
-        Me.lblBufferNeg.Size = New System.Drawing.Size(252, 1)
-        Me.lblBufferNeg.TabIndex = 17
-        Me.lblBufferNeg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblFavCostLb
-        '
-        Me.lblFavCostLb.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.lblFavCostLb.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFavCostLb.ForeColor = System.Drawing.Color.White
-        Me.lblFavCostLb.Location = New System.Drawing.Point(0, 282)
-        Me.lblFavCostLb.Name = "lblFavCostLb"
-        Me.lblFavCostLb.Size = New System.Drawing.Size(137, 27)
-        Me.lblFavCostLb.TabIndex = 5
-        Me.lblFavCostLb.Text = "Cost"
-        Me.lblFavCostLb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'btnReset
-        '
-        Me.btnReset.BackColor = System.Drawing.Color.FromArgb(CType(CType(172, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnReset.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnReset.ForeColor = System.Drawing.Color.White
-        Me.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReset.Location = New System.Drawing.Point(400, 0)
-        Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(100, 24)
-        Me.btnReset.TabIndex = 11
-        Me.btnReset.Text = "Reset"
-        Me.btnReset.UseVisualStyleBackColor = False
-        '
         'frmFountain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1097,7 +1096,8 @@ Partial Class frmFountain
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(708, 395)
+        Me.MaximumSize = New System.Drawing.Size(708, 467)
+        Me.MinimumSize = New System.Drawing.Size(708, 467)
         Me.Name = "frmFountain"
         Me.Text = "Heroes of Hammerwatch Fountain Setup"
         Me.pnlMain.ResumeLayout(False)
@@ -1195,4 +1195,6 @@ Partial Class frmFountain
     Friend WithEvents lblBufferNeg As System.Windows.Forms.Label
     Friend WithEvents lblFavCostLb As System.Windows.Forms.Label
     Friend WithEvents btnReset As System.Windows.Forms.Button
+    Friend WithEvents ofd As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents sfd As System.Windows.Forms.SaveFileDialog
 End Class

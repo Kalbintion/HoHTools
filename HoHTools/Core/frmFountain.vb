@@ -175,6 +175,7 @@
         sFortune &= Convert.ToInt64(negFortune, 2)
 
         sFortune &= "A" & oFortune
+        sFortune &= "A" & IIf(chkHideUnsel.Checked = True, "1", "0")
     End Sub
 
     Private Sub UpdateDisplays()
@@ -193,8 +194,8 @@
             lblFavor.Text = "Favor +" & oFortune
         End If
         lblFavCost.Text = Math.Min(Math.Max(150 * ((2 ^ oFortune) - 1), 0), 200000000)
-        lblFavGold.Text = Math.Max(5 * oFortune, 0) & "%"
-        lblFavXp.Text = Math.Max(5 * oFortune, 0) & "%"
+        lblFavGold.Text = Math.Max(5 * (-1 * oFortune), 0) & "%"
+        lblFavXp.Text = Math.Max(5 * (-1 * oFortune), 0) & "%"
     End Sub
 
     Private Sub btnShare_Click(sender As System.Object, e As System.EventArgs) Handles btnShare.Click
@@ -205,31 +206,96 @@
     End Sub
 
     Private Sub btnLoadShare_Click(sender As System.Object, e As System.EventArgs) Handles btnLoadShare.Click
-RETRY:
-        Dim ret As String = InputBox("Paste in share code", "Share Code Entry", "")
-        If ret = "" Then Return
-        ' Parse Code
-        Dim parts() As String = ret.Split("A")
-        If parts.Length <> 3 Then
-            GoTo SHARE_ERROR
+        Dim pRet As Boolean = False
+        Dim mRet As DialogResult
+        Do
+            Dim ret As String = InputBox("Paste in share code. Leave blank to cancel.", "Share Code Entry", "")
+            If ret = "" Then Return
+
+            pRet = ParseCode(ret)
+            If pRet = False Then
+                mRet = MessageBox.Show("Invalid share code! Make sure you copied and pasted it correctly!", "Share Code Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error)
+            End If
+        Loop While mRet = Windows.Forms.DialogResult.Retry
+    End Sub
+
+    Private Sub btnReset_Click(sender As System.Object, e As System.EventArgs) Handles btnReset.Click
+        Dim mRet As DialogResult = MessageBox.Show("Clear fountain selection?", "Confirm Reset", MessageBoxButtons.YesNo)
+        If mRet = Windows.Forms.DialogResult.No Then Return
+
+        For Each lb As Label In Buffs
+            lb.Tag = "0"
+            lb.Image = My.Resources.Fountain_Btn_Base
+        Next
+
+        For Each lb As Label In Debuffs
+            lb.Tag = "0"
+            lb.Image = My.Resources.Fountain_Btn_Base
+        Next
+
+        UpdateDisplays()
+        chkHideUnsel_CheckedChanged(Nothing, Nothing)
+    End Sub
+
+    Private Sub btnSave_Click(sender As System.Object, e As System.EventArgs) Handles btnSave.Click
+        sfd.Title = "Save Fountain Setup..."
+        sfd.Filter = "Fountain Setup|*.hfs|All Files|*.*"
+        Dim ret As DialogResult = sfd.ShowDialog()
+        If ret = Windows.Forms.DialogResult.Cancel Then Return
+
+        System.IO.File.WriteAllText(sfd.FileName, sFortune)
+    End Sub
+
+    Private Sub btnLoad_Click(sender As System.Object, e As System.EventArgs) Handles btnLoad.Click
+        ofd.Title = "Open Fountain Setup..."
+        ofd.Filter = "Fountain Setup|*.hf|All Files|*.*"
+        Dim ret As DialogResult = ofd.ShowDialog()
+        If ret = Windows.Forms.DialogResult.Cancel Then Return
+
+        Dim sRet As String = System.IO.File.ReadAllText(ofd.FileName)
+        Dim mRet As DialogResult
+        Dim pRet As Boolean = False
+        Do
+            pRet = ParseCode(sRet)
+            If pRet = False Then
+                mRet = MessageBox.Show("Error! Could not parse file contents. Do you wish to try again?", "Load Parse Error", MessageBoxButtons.YesNo)
+            End If
+        Loop While mRet = Windows.Forms.DialogResult.Yes And pRet = False
+    End Sub
+
+    Private Function ParseCode(code As String) As Boolean
+        Dim parts() As String = code.Split("A")
+        If parts.Length <> 4 Then
+            Return False
         End If
 
         ' We have enough parts!
         Try
             ' Parse elements to longs and convert to binary strings
+
+            ' " Positive
             Dim piFav As Long = 0
             Long.TryParse(parts(0), piFav)
             Dim pFav As String = Convert.ToString(piFav, 2).PadLeft(Buffs.Length, "0")
+
+            ' " Negative
             Dim niFav As Long = 0
             Long.TryParse(parts(1), niFav)
             Dim nFav As String = Convert.ToString(niFav, 2).PadLeft(Debuffs.Length, "0")
+
+            ' " Overall Favor
             Dim oiFav As Long = 0
             Long.TryParse(parts(2), oiFav)
             Dim oFav As String = Convert.ToString(oiFav, 2)
 
+            ' " Selection Checkbox
+            Dim ciSel As Long = 0
+            Long.TryParse(parts(3), ciSel)
+            If ciSel = 0 Then chkHideUnsel.Checked = False Else If ciSel = 1 Then chkHideUnsel.Checked = True
+
             ' Verify element lengths - If these trigger than padding failed or theres more bits than desired, may be an outdated share code
-            If pFav.Length <> Buffs.Length Then GoTo SHARE_ERROR
-            If nFav.Length <> Debuffs.Length Then GoTo SHARE_ERROR
+            If pFav.Length <> Buffs.Length Then Return False
+            If nFav.Length <> Debuffs.Length Then Return False
 
             ' Finally Parse for Buff Tags and then run UpdateDisplays()
             For i = 0 To pFav.Length - 1
@@ -243,35 +309,14 @@ RETRY:
                 Debuffs(i).Image = IIf(nFav.Chars(i) = "1", My.Resources.Fountain_Btn_Selected, My.Resources.Fountain_Btn_Base)
             Next
 
+            ' Update Display Info
             UpdateDisplays()
+            chkHideUnsel_CheckedChanged(Nothing, Nothing)
         Catch ex As Exception
-            GoTo SHARE_ERROR
+            Return False
         End Try
 
-        Return
+        Return True
+    End Function
 
-SHARE_ERROR:
-        Dim mRet As DialogResult = MessageBox.Show("Invalid share code! Make sure you copied and pasted it correctly!", "Share Code Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error)
-        If mRet = Windows.Forms.DialogResult.Retry Then
-            GoTo RETRY
-        End If
-
-        Return
-    End Sub
-
-    Private Sub btnReset_Click(sender As System.Object, e As System.EventArgs) Handles btnReset.Click
-        Dim mRet As DialogResult = MessageBox.Show("Clear fountain selection?", "Confirm Reset", MessageBoxButtons.YesNo)
-        If mRet = Windows.Forms.DialogResult.No Then Return
-
-        For Each lb As Label In Buffs
-            lb.Tag = "0"
-        Next
-
-        For Each lb As Label In Debuffs
-            lb.Tag = "0"
-        Next
-
-        UpdateDisplays()
-        chkHideUnsel_CheckedChanged(Nothing, Nothing)
-    End Sub
 End Class
