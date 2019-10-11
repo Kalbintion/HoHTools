@@ -121,6 +121,16 @@
   <data name="Tile_ON" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Tile_ON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icon_Blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Icon_Blood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Constellation_On" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Icon_Constellation_On.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>1</comment>
+  </data>
+  <data name="Fountain_LBBC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_LBBC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Skill_Effects" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Skill Effects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,26 +143,54 @@
   <data name="Attack_Effects" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Attack Effects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icon_Constellation_Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Icon_Constellation_Off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>0</comment>
+  </data>
   <data name="Skill_Power" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Skill Power.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_Decay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Icon_Decay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fountain_PosNegFavBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_PosNegFavBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fountain_Btn_Base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_Btn_Base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fountain_TBLC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_TBLC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Tile_Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Tile_Off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Move_Speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Move Speed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Town_Ore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Town Ore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fountain_Btn_Selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_Btn_Selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fountain_RBTC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_RBTC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fountain_RBBC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_RBBC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fountain_Btn_Hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_Btn_Hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_Library_Tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Icon_Library_Tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_Blood" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Icon_Blood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fountain_LBM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_LBM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fountain_PosFav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_PosFav.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HoHLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\HoHLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,14 +198,23 @@
   <data name="Icon_Lights_Tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Icon_Lights_Tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fountain_TBM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_TBM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Constellation_Base" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Constellation_Base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Itemsprite2xcrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Itemsprite2xcrop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Town_Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Town Gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Health" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Health.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Town_Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Stats\Town Gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Experience Bonus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Experience Bonus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Mana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,20 +222,29 @@
   <data name="Health_Regen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Health Regen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_Stats_tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Icon_Stats_tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Resistance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Resistance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fountain_RBM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_RBM.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Ore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Move_Speed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Stats\Move Speed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fountain_LBTC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_LBTC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Stats_tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Icon_Stats_tool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Attack_Power" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Attack Power.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gold Bonus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Stats\Gold Bonus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mana_Regen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Mana Regen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,21 +252,22 @@
   <data name="Icon_Malign" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Icon_Malign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Fountain_TBRC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_TBRC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Experience" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Experience.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fountain_Icon_Small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_Icon_Small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Stats\Gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Constellation_Base" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Constellation_Base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fountain_NegFav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_NegFav.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_Constellation_Off" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Icon_Constellation_Off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>0</comment>
-  </data>
-  <data name="Icon_Constellation_On" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Res\Icon_Constellation_On.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>1</comment>
+  <data name="Fountain_NeuFav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Fountain_NeuFav.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

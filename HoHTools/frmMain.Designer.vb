@@ -31,6 +31,7 @@ Partial Class frmMain
         Me.btnOverlay = New System.Windows.Forms.Button()
         Me.btnSettings = New System.Windows.Forms.Button()
         Me.btnConstellation = New System.Windows.Forms.Button()
+        Me.btnFountain = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,7 +88,7 @@ Partial Class frmMain
         Me.btnToolStat.ForeColor = System.Drawing.Color.White
         Me.btnToolStat.Image = Global.HoHTools.My.Resources.Resources.Icon_Stats_tool
         Me.btnToolStat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnToolStat.Location = New System.Drawing.Point(148, 129)
+        Me.btnToolStat.Location = New System.Drawing.Point(12, 167)
         Me.btnToolStat.Name = "btnToolStat"
         Me.btnToolStat.Size = New System.Drawing.Size(130, 32)
         Me.btnToolStat.TabIndex = 3
@@ -101,7 +102,7 @@ Partial Class frmMain
         Me.lblDeveloped.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblDeveloped.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDeveloped.ForeColor = System.Drawing.Color.White
-        Me.lblDeveloped.Location = New System.Drawing.Point(0, 170)
+        Me.lblDeveloped.Location = New System.Drawing.Point(0, 222)
         Me.lblDeveloped.Name = "lblDeveloped"
         Me.lblDeveloped.Size = New System.Drawing.Size(426, 21)
         Me.lblDeveloped.TabIndex = 4
@@ -120,7 +121,7 @@ Partial Class frmMain
         Me.btnOverlay.Name = "btnOverlay"
         Me.btnOverlay.Size = New System.Drawing.Size(130, 32)
         Me.btnOverlay.TabIndex = 6
-        Me.btnOverlay.Text = "Game Overlay"
+        Me.btnOverlay.Text = "Overlay"
         Me.btnOverlay.UseVisualStyleBackColor = False
         '
         'btnSettings
@@ -152,15 +153,32 @@ Partial Class frmMain
         Me.btnConstellation.Name = "btnConstellation"
         Me.btnConstellation.Size = New System.Drawing.Size(130, 32)
         Me.btnConstellation.TabIndex = 8
-        Me.btnConstellation.Text = "Constellation"
+        Me.btnConstellation.Text = "Constellations"
         Me.btnConstellation.UseVisualStyleBackColor = False
+        '
+        'btnFountain
+        '
+        Me.btnFountain.BackColor = System.Drawing.Color.FromArgb(CType(CType(172, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnFountain.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnFountain.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnFountain.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFountain.ForeColor = System.Drawing.Color.White
+        Me.btnFountain.Image = Global.HoHTools.My.Resources.Resources.Fountain_Icon_Small
+        Me.btnFountain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnFountain.Location = New System.Drawing.Point(148, 129)
+        Me.btnFountain.Name = "btnFountain"
+        Me.btnFountain.Size = New System.Drawing.Size(130, 32)
+        Me.btnFountain.TabIndex = 9
+        Me.btnFountain.Text = "Fountain"
+        Me.btnFountain.UseVisualStyleBackColor = False
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.HoHTools.My.Resources.Resources.Background
-        Me.ClientSize = New System.Drawing.Size(426, 191)
+        Me.ClientSize = New System.Drawing.Size(426, 243)
+        Me.Controls.Add(Me.btnFountain)
         Me.Controls.Add(Me.btnConstellation)
         Me.Controls.Add(Me.btnSettings)
         Me.Controls.Add(Me.btnOverlay)
@@ -186,4 +204,5 @@ Partial Class frmMain
     Friend WithEvents btnOverlay As System.Windows.Forms.Button
     Friend WithEvents btnSettings As System.Windows.Forms.Button
     Friend WithEvents btnConstellation As System.Windows.Forms.Button
+    Friend WithEvents btnFountain As System.Windows.Forms.Button
 End Class

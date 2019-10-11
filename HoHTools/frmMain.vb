@@ -24,4 +24,12 @@
     Private Sub btnConstellation_Click(sender As System.Object, e As System.EventArgs) Handles btnConstellation.Click
         frmConstellation.Show()
     End Sub
+
+    Private Sub btnFountain_Click(sender As System.Object, e As System.EventArgs) Handles btnFountain.Click
+        frmFountain.Show()
+    End Sub
+
+    Private Sub frmMain_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

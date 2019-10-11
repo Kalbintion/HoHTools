@@ -111,6 +111,12 @@
     <Compile Include="Core\frmConstellation.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Core\frmFountain.Designer.vb">
+      <DependentUpon>frmFountain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Core\frmFountain.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Core\frmLibrary.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Core\frmConstellation.resx">
       <DependentUpon>frmConstellation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\frmFountain.resx">
+      <DependentUpon>frmFountain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Core\frmLibrary.resx">
       <DependentUpon>frmLibrary.vb</DependentUpon>
@@ -251,6 +260,23 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Res\Constellation_Base.png" />
+    <None Include="Res\Fountain_Icon_Small.png" />
+    <None Include="Res\Fountain_TBLC.png" />
+    <None Include="Res\Fountain_TBM.png" />
+    <None Include="Res\Fountain_TBRC.png" />
+    <None Include="Res\Fountain_PosNegFavBar.png" />
+    <None Include="Res\Fountain_LBBC.png" />
+    <None Include="Res\Fountain_LBM.png" />
+    <None Include="Res\Fountain_LBTC.png" />
+    <None Include="Res\Fountain_RBBC.png" />
+    <None Include="Res\Fountain_RBM.png" />
+    <None Include="Res\Fountain_RBTC.png" />
+    <None Include="Res\Fountain_PosFav.png" />
+    <None Include="Res\Fountain_Btn_Base.png" />
+    <None Include="Res\Fountain_Btn_Hover.png" />
+    <None Include="Res\Fountain_Btn_Selected.png" />
+    <None Include="Res\Fountain_NegFav.png" />
+    <None Include="Res\Fountain_NeuFav.png" />
     <Content Include="Res\Icon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -280,6 +306,8 @@
     <None Include="Res\Icon_Constellation_On.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="Res\Stats\Experience Bonus.png" />
+    <None Include="Res\Stats\Gold Bonus.png" />
     <Content Include="Res\Tile_Off.png" />
     <Content Include="Res\Tile_ON.png" />
     <None Include="Res\Background.png">

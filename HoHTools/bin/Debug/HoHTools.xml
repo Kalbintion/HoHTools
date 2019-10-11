@@ -39,7 +39,83 @@ HoHTools
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Experience_Bonus">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_Btn_Base">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_Btn_Hover">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_Btn_Selected">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_Icon_Small">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_LBBC">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_LBM">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_LBTC">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_NegFav">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_NeuFav">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_PosFav">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_PosNegFavBar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_RBBC">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_RBM">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_RBTC">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_TBLC">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_TBM">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Fountain_TBRC">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:HoHTools.My.Resources.Resources.Gold">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HoHTools.My.Resources.Resources.Gold_Bonus">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

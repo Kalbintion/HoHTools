@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HoHTools.exe" size="1241088">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HoHTools.exe" size="1437696">
       <assemblyIdentity name="HoHTools" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Viv8Eo5udkCMeQdXRnbzpOBBaX0=</dsig:DigestValue>
+        <dsig:DigestValue>qXeVj5S+dIgZXdZLF0w4DXc8yXE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
