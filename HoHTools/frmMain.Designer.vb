@@ -88,7 +88,7 @@ Partial Class frmMain
         Me.btnToolStat.ForeColor = System.Drawing.Color.White
         Me.btnToolStat.Image = Global.HoHTools.My.Resources.Resources.Icon_Stats_tool
         Me.btnToolStat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnToolStat.Location = New System.Drawing.Point(12, 167)
+        Me.btnToolStat.Location = New System.Drawing.Point(148, 167)
         Me.btnToolStat.Name = "btnToolStat"
         Me.btnToolStat.Size = New System.Drawing.Size(130, 32)
         Me.btnToolStat.TabIndex = 3
@@ -102,7 +102,7 @@ Partial Class frmMain
         Me.lblDeveloped.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.lblDeveloped.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDeveloped.ForeColor = System.Drawing.Color.White
-        Me.lblDeveloped.Location = New System.Drawing.Point(0, 222)
+        Me.lblDeveloped.Location = New System.Drawing.Point(0, 167)
         Me.lblDeveloped.Name = "lblDeveloped"
         Me.lblDeveloped.Size = New System.Drawing.Size(426, 21)
         Me.lblDeveloped.TabIndex = 4
@@ -177,7 +177,7 @@ Partial Class frmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.HoHTools.My.Resources.Resources.Background
-        Me.ClientSize = New System.Drawing.Size(426, 243)
+        Me.ClientSize = New System.Drawing.Size(426, 188)
         Me.Controls.Add(Me.btnFountain)
         Me.Controls.Add(Me.btnConstellation)
         Me.Controls.Add(Me.btnSettings)
